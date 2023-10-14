@@ -1,0 +1,89 @@
+/*
+   Tutorial 3
+   Tutorial Case
+   
+   Positioning Styles for the pc_info.html file
+   
+   Filename: pc_info.css
+
+*/
+
+/* Hidding the div elements */
+/* div.infobox {
+  display: none;
+} */
+
+/* Main Styles */
+
+/* Setting the main element to relative with a heigh of 1400px */
+main {
+  overflow: auto;
+  position: relative;
+  height: 450px;
+  width: 100%;
+}
+
+/* Infographic Styles */
+
+/* Setting the position type for all the info boxes */
+div.infobox {
+  position: absolute;
+}
+
+/* First Infographic */
+
+/* When the display property the hidden info is removed thats why  we able to see it */
+div#info1 {
+  display: block;
+  top: 20px;
+  left: 5%;
+}
+
+/* Second Infographic */
+div#info2 {
+  display: block;
+  top: 185px;
+  left: 42%;
+}
+
+/* Third Infographic */
+div#info3 {
+  display: block;
+  top: 135px;
+  left: 75%;
+}
+
+/* Fourth Infographic */
+div#info4 {
+  display: block;
+  top: 510px;
+  left: 8%;
+}
+
+/* Fifth Infographic */
+div#info5 {
+  display: block;
+  top: 800px;
+  left: 3%;
+}
+
+/* Sixth Infographic */
+div#info6 {
+  display: block;
+  top: 600px;
+  left: 48%;
+}
+
+/* Seventh Infographic */
+div#info7 {
+  display: block;
+  top: 1000px;
+  left: 68%;
+}
+
+/* Eighth Infographic */
+div#info8 {
+  display: block;
+  top: 1100px;
+  left: 12%;
+}
