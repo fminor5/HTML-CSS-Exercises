@@ -1,0 +1,66 @@
+@charset "utf-8";
+/*
+   Tutorial 3
+   Tutorial Case
+   
+   Style Sheet for Grids used in the Pandaisia Chocolates website
+   
+   Filename: pc_grids.css
+
+*/
+
+/* Grid Styles for Page Body */
+body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "header header"
+    "intro faq"
+    "articles faq"
+    "footer footer";
+  /* The next property is obsole */
+  /* grid-column-gap: 15px;  */
+  /* This one is in use now */
+  column-gap: 15px;
+}
+
+body > header {
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+body > article {
+  grid-area: intro;
+}
+
+body > aside {
+  grid-area: faq;
+}
+
+body > section {
+  grid-area: articles;
+}
+
+body > footer {
+  grid-area: footer;
+}
+
+/* Grid Styles for Nested Grid */
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Outline child element of the body */
+/* body > * {
+  outline: 2px dashed red;
+} */
+
+section > h1 {
+  grid-area: 1/1/2/3;
+}
+
+/* Outline for the child elements of the section */
+/* section > * {
+  outline: 2px dashed blue;
+} */
