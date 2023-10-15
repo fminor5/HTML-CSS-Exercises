@@ -1,0 +1,44 @@
+﻿@charset "utf-8";
+
+/*
+   Tutorial 3
+   Coding Challenge 1
+   
+   Filename: code3-1_float.css
+
+*/
+
+/* Creates the drop capital */
+p:first-of-type:first-letter {
+  float: left;
+  font-size: 4em;
+  margin-right: 0.1em;
+  padding-right: 0.1em;
+  padding-bottom: 0.2em;
+}
+
+/* Displays the first line in small caps */
+p:first-of-type::first-line {
+  font-variant: small-caps;
+  font-size: 1.4em;
+}
+
+/* Floating the images to the right */
+img {
+  clear: right;
+  height: 3.3em;
+  float: right;
+}
+
+/* This is for testing on the first two images. */
+/* #imf {
+  clear: right;
+  height: 3.3em;
+  float: right;
+}
+
+#ims {
+  clear: right;
+  height: 3.3em;
+  float: right;
+} */
