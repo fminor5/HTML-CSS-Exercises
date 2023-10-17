@@ -1,0 +1,71 @@
+﻿@charset "utf-8";
+
+/*
+   Tutorial 3
+   Coding Challenge 3
+   
+   Filename: code3-3_scroll.css
+
+*/
+
+/* Container styles */
+section#container {
+  width: 900px;
+  height: 370px;
+  margin: 10px auto;
+  position: relative;
+  top: 30px;
+  left: 0px;
+  outline: 2px solid;
+  overflow: scroll;
+}
+
+/* Div styles */
+div {
+  width: 300px;
+  height: 330px;
+  position: absolute;
+}
+
+/* Img styles */
+img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}
+
+div#slide1 {
+  left: 0px;
+}
+
+div#slide2 {
+  left: 300px;
+}
+
+div#slide3 {
+  left: 600px;
+}
+
+div#slide4 {
+  left: 900px;
+}
+
+div#slide5 {
+  left: 1200px;
+}
+
+div#slide6 {
+  left: 1500px;
+}
+
+div#slide7 {
+  left: 1800px;
+}
+
+div#slide8 {
+  left: 2100px;
+}
+
+div#slide9 {
+  left: 2400px;
+}
