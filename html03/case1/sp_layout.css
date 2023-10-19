@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/*
+   Tutorial 3
+   Case Problem 1
+   
+   Layout styles for Slate and Pencil Tutoring
+   
+   Filename: sp_layout.css
+
+*/
+
+/* Window and Body Styles */
+html {
+  height: 100%;
+}
+
+body {
+  width: 95%;
+  min-width: 640px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+}
+
+img {
+  display: block;
+}
+
+/* CSS Grid Styles */
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+img#logo {
+  grid-column: 1 / span 3;
+  width: 100%;
+}
+
+/* Horizontal Navigation List Styles */
+body > nav.horizontal {
+  grid-column: 1 / -1;
+}
+
+body footer {
+  grid-column: 1 / -1;
+}
+
+aside {
+  /* This allows the aside section to span over two columns */
+  /* If we use 1/2 instead of span the aside sections are displayed in rows (vertically) */
+  grid-column: span 2;
+}
+
+body > nav.horizontal li {
+  display: block;
+  width: 12.5%;
+  float: left;
+}
+
+/* Section Styles */
+section > img {
+  /* This makes the image to size 50% */
+  width: 50%;
+  margin: 0 auto;
+}
+
+section > p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Customer Comment Styles */
+aside {
+  width: 75%;
+  padding-bottom: 30px;
+}
+
+aside:nth-of-type(odd) {
+  justify-self: end;
+}
+
+aside > img {
+  float: left;
+  width: 20%;
+}
+
+aside > p {
+  float: left;
+  width: 75%;
+  margin-left: 5%;
+}
