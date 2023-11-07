@@ -13,6 +13,13 @@ section {
   flex-flow: row wrap-reverse;
 }
 
-div {
+div.class {
   flex: 1 1 200px;
+}
+
+div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
