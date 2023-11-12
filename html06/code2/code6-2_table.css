@@ -7,3 +7,29 @@
    Filename: code6-2_table.css
 
 */
+
+table {
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+th {
+  color: white;
+  background: red;
+  font-size: 1.5em;
+  border: 1px solid gray;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  font-size: 0.7em;
+  border: 1px solid gray;
+  text-align: top-left; /* check this step C */
+  vertical-align: top;
+}
+
+td.blank {
+  /* background: red; */
+  background: linear-gradient(135deg, red, gray);
+}
