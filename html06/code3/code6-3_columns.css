@@ -7,3 +7,22 @@
    Filename: code6-3_columns.css
 
 */
+
+article {
+  column-count: 3;
+  column-width: 350px;
+  column-rule: 5px ridge rgb(231, 231, 231);
+  column-gap: 20px;
+}
+
+article h1 {
+  column-span: all;
+  text-align: center;
+  font-size: 3.5em;
+  letter-spacing: 0.15em;
+}
+
+article p {
+  orphans: 4;
+  widows: 4;
+}
