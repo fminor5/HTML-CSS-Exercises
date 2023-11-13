@@ -9,22 +9,22 @@
 */
 
 table {
-  box-collapse: collapse;
+  border-collapse: collapse;
   border: 6px solid rgb(51, 51, 51);
 }
 
-col.hours {
+col#hours {
   width: 100px;
   background-color: beige;
 }
 
-col.days {
+col#days {
   width: 150px;
   background-color: burlywood;
 }
 
 caption {
-  align: right;
+  text-align: right;
   font-size: 1.2em;
   background-color: black;
   color: ivory;
@@ -39,11 +39,11 @@ th {
   vertical-align: top;
 }
 
-theader {
+thead {
   background-color: rgb(51, 51, 51);
 }
 
-theader th {
+thead th {
   text-align: center;
   color: ivory;
   letter-spacing: 0.2em;
@@ -54,7 +54,7 @@ tbody tr th {
   font-weight: normal;
 }
 
-tfooter {
+tfoot {
   background-color: rgb(51, 51, 51);
   color: ivory;
 }
