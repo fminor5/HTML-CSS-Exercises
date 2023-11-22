@@ -9,43 +9,90 @@
    -->
     <meta charset="utf-8" />
     <title>Coding Challenge 7-2</title>
+    <link rel="stylesheet" href="code7-2_forms.css" />
   </head>
   <body>
     <h1>Survey Questions</h1>
-
-    <ol type="1">
-      <li>
-        How satisfied were you with the conference workshops?
-        <ol type="a">
-          <li>Very Satisfied</li>
-          <li>Satisfied</li>
-          <li>Dissatisfied</li>
-          <li>Very Dissatisfied</li>
-        </ol>
-      </li>
-      <li>
-        How satisfied were you with the conference speakers?
-        <ol type="a">
-          <li>Very Satisfied</li>
-          <li>Satisfied</li>
-          <li>Dissatisfied</li>
-          <li>Very Dissatisfied</li>
-        </ol>
-      </li>
-      <li>
-        How satisfied were you with the conference facilities?
-        <ol type="a">
-          <li>Very Satisfied</li>
-          <li>Satisfied</li>
-          <li>Dissatisfied</li>
-          <li>Very Dissatisfied</li>
-        </ol>
-      </li>
-      <li>
-        How likely are you to attend next year's conference?
-        <div id="newRow"></div>
-      </li>
-      <li>Provide any suggestions for the next conference:</li>
-    </ol>
+    <form action="submit-survey.php">
+      <ol type="1">
+        <li>
+          How satisfied were you with the conference workshops?
+          <ol type="a">
+            <li>
+              <input type="radio" value="a" id="q1a" name="q1" />
+              <label for="q1a">Very Satisfied</label>
+            </li>
+            <li>
+              <input type="radio" value="b" id="q1b" name="q1" />
+              <label for="q1b">Satisfied</label>
+            </li>
+            <li>
+              <input type="radio" value="c" id="q1c" name="q1" />
+              <label for="q1c">Dissatisfied</label>
+            </li>
+            <li>
+              <input type="radio" value="d" id="q1d" name="q1" />
+              <label for="q1d">Very Dissatisfied</label>
+            </li>
+          </ol>
+        </li>
+        <li>
+          How satisfied were you with the conference speakers?
+          <ol type="a">
+            <li>
+              <input type="radio" value="a" id="q2a" name="q2" />
+              <label for="q2a">Very Satisfied</label>
+            </li>
+            <li>
+              <input type="radio" value="b" id="q2b" name="q2" />
+              <label for="q2b">Satisfied</label>
+            </li>
+            <li>
+              <input type="radio" value="c" id="q2c" name="q2" />
+              <label for="q2c">Dissatisfied</label>
+            </li>
+            <li>
+              <input type="radio" value="d" id="q2d" name="q2" />
+              <label for="q2d">Very Dissatisfied</label>
+            </li>
+          </ol>
+        </li>
+        <li>
+          How satisfied were you with the conference facilities?
+          <ol type="a">
+            <li>
+              <input type="radio" value="a" id="q3a" name="q3" />
+              <label for="q3a">Very Satisfied</label>
+            </li>
+            <li>
+              <input type="radio" value="b" id="q3b" name="q3" />
+              <label for="q3b">Satisfied</label>
+            </li>
+            <li>
+              <input type="radio" value="c" id="q3c" name="q3" />
+              <label for="q3c">Dissatisfied</label>
+            </li>
+            <li>
+              <input type="radio" value="d" id="q3d" name="q3" />
+              <label for="q3d">Very Dissatisfied</label>
+            </li>
+          </ol>
+        </li>
+        <li>
+          How likely are you to attend next year's conference?
+          <div id="newRow">
+            very unlikely
+            <input type="range" name="q4" value="5" step="1" min="0" max="10" />
+            very likely
+          </div>
+        </li>
+        <li>
+          <label for="q5text"
+            >Provide any suggestions for the next conference:
+          </label>
+          <textarea name="q5" id="q5text">enter your suggestions here</textarea>
+        </li>
+      </ol>
+    </form>
   </body>
 </html>
