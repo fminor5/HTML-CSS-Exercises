@@ -16,6 +16,9 @@
     <title>CGIP Registration Form</title>
     <link href="cg_base.css" rel="stylesheet" />
     <link href="cg_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="cg_forms.css" />
+    <link rel="stylesheet" href="cg_validate.css" />
+    <script src="cg_script.js" defer></script>
   </head>
 
   <body>
@@ -51,6 +54,56 @@
     <section>
       <h1>Conference Registration Form</h1>
       <p>Required Item (*)</p>
+      <form action="http://www.example.com/cg/register" method="post">
+        <label for="titleBox">Title</label>
+        <select type="text" name="titleList" id="titleBox">
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Ms">Ms</option>
+          <option value="Prof">Prof</option>
+          <option value="Dr">Dr.</option>
+          <option value="AssistProf">Assist. Prof.</option>
+          <option value="AssocProf">Assoc. Prof.</option>
+        </select>
+        <label for="fnBox">First Name*</label>
+        <input type="text" name="firstName" id="fnBox" required />
+        <label for="lnBox">Last Name*</label>
+        <input type="text" name="lastName" id="lnBox" required />
+        <label for="addBox">Address*</label>
+        <textarea name="address" id="addBox" required></textarea>
+        <label for="groupBox">Company or University</label>
+        <input type="text" name="group" id="groupBox" />
+        <label for="mailBox">E-mail*</label>
+        <input type="email" name="email" id="mailBox" required />
+        <label for="phoneBox">Phone Number*</label>
+        <input
+          type="tel"
+          name="phoneNumber"
+          id="phoneBox"
+          required
+          placeholder="(nnn) nnn-nnnn"
+          pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+        />
+        <label for="idBox">ACGIP Membership Number</label>
+        <input
+          type="text"
+          name="acgipID"
+          id="idBox"
+          placeholder="acgip-nnnnnn"
+          pattern="^acgip\-\d{6}$"
+        />
+        <label for="regList">Registration Category</label>
+        <select name="registerType" id="regList">
+          <option value="member">ACGIP Member ($695)</option>
+          <option value="nonmember">Non-Member ($795)</option>
+          <option value="student">Student ($310)</option>
+          <option value="poster">Poster ($95)</option>
+          <option value="guest">Guest ($35)</option>
+        </select>
+        <p>
+          <input type="submit" value="continue" />
+        </p>
+      </form>
     </section>
 
     <aside>
