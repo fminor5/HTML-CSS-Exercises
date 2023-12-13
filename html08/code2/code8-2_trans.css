@@ -66,3 +66,52 @@ figure figcaption {
   left: 400px;
   transform: rotate(30deg);
 }
+
+/* Transition styles */
+
+figure:hover {
+  width: 400px;
+  z-index: 2;
+  transition: width 2s;
+}
+
+figure:hover img {
+  width: 100%;
+  filter: drop-shadow(10px 10px 20px) grayscale();
+  filter: blur(0);
+  transition: filter 2s;
+}
+
+figure:hover figcaption {
+  font-size: 1.2em;
+  transition: font-size 2s;
+}
+
+#fig1:hover {
+  transform: rotate(0deg);
+  transition: 2s;
+}
+
+#fig2:hover {
+  transform: rotate(0deg);
+  transition: 2s;
+}
+
+#fig3:hover {
+  transform: rotate(0deg);
+  transition: 2s;
+}
+
+#fig4:hover {
+  transform: rotate(0deg);
+  transition: 2s;
+}
+
+#fig5:hover {
+  transform: rotate(0deg);
+}
+
+#fig6:hover {
+  transform: rotate(0deg);
+  transition: 2s;
+}
